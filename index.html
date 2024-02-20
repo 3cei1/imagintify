@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <title>App we de identificacion de imagenes en tiempo real</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<!--Agregar la clase del fondo al cuerpo del html-->
+<body background="background.jpg">
+<center>
+  <!--Agrega la clase btn-primary heading a la etiqueta h3-->
+  <h3 class="btn-primary heading">App web de identificacion de imagenes en tiempo real
+    <!--Agrega una línea-->
+<hr>
+    <center>
+      <!--Haz que el div sea receptivo (compatible con diferentes dispositivos)-->
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+        Utilizamos Mobilenet como modelo
+        <br>
+        <!--Agrega la clase btn heading_div2 al div-->
+          <div class="btn heading_div2">
+          El modelo Mobilenet esta entrenado en <!--Agrega un salto de línea  y el resto del texto-->
+<br> mas de 1.3 millones de imágenes
+          </div>
+        </div>
+    </center>
+    <br>
+  </h3>
+  <br><br>
+  
+  <!--Agrega la clase al objeto p y span-->
+  <p class="btn btn-success result_para_tag">Objeto: 
+    <span id="result_object_name"></span> 
+  </p>
+  
+  <br><br>
+  <!--Agrega la clase a la precisión p y span-->
+  <p class="btn btn-success result_para_tag">Precision: 
+    <span id="result_object_accuracy"></span> 
+  </p>
+
+</center>
+
+<div class="copy_right_footer">
+  Desarrollado por Eric Contreras
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
